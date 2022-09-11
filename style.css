@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,600;0,700;1,400&family=Oswald:wght@300&family=Outfit:wght@200;400;600;700;800;900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Roboto:ital,wght@1,300&family=Titillium+Web:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: poppins, sans-serif;
+}
+nav{
+  background: hsl(0, 0%, 0%);
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+}
+#signin-btn{
+  background: #D8A21A;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 10px;
+  border: none;
+ 
+  cursor: pointer;
+}
+#signin-btn:hover{
+  opacity: .7;
+}
+#login-btn{
+  background: #D8A21A;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 10px;
+  border: 1px solid #121212;
+  cursor: pointer;
+  border: none;
+}
+.footer 
+{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  text-align: center;
+}
+
+#About h1,p{
+
+  text-align: 
+  center;
+  padding: 20px;
+  margin: 10px;
+}
+#login-btn:hover{
+  opacity: .7;
+}
+#products-btn{
+  margin-top: 1rem;
+  background: #D8A21A; 
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 10px;
+  cursor: pointer;
+  border: none;
+}
+#products-btn a{
+  color: #fff;
+}
+
+#products-btn:hover{
+  background-color: #D8A21A;
+}
+
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 90px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #D8A21A;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+  nav{
+    position: fixed;
+    top: 0;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+select{
+  background-color: #000;
+  border: none;
+  color: #fff;
+  font-family: poppins, sans-serif;
+  font-size: 17px;
+  padding: 10px; 
+  cursor: pointer;
+}
+.order:hover .dropdown-content option li a {
+  display: block;
+}
+@media (max-width: 858px){
+  .order{
+    background: #2c3e50;
+  }
+}
+
+/*Nav End*/
+section{
+  background: url(images/colored-smoke-png-43258.png) no-repeat;
+  background-size: cover;
+  height: calc(100vh 100vw);
+  margin-top: auto;
+  
+}
+.home{
+  display:inline-grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  place-items: center;
+  text-align: center;
+  
+}
+.intro h1{
+  font-size: 2.5rem;
+  
+}
+.intro{
+  font-size: 1.5rem;
+}
+.waterjug img{
+  width: 100%;
+  height: auto;
+  padding: 5rem;
+  margin-top: 1rem;
+}
+@media (max-width: 858px){
+  .home{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(2, 2fr,.5fr);
+    margin-top: 8rem;
+  }
+  .intro{
+    margin: 0 .5rem;
+  }
+  .intro h1{
+    font-size: 2rem;
+  }
+  .intro p{
+    font-size: 1rem;
+  }
+
+
+}
+/*Product Section*/
+.products{
+  width: 100wh;
+  height: 80vh;
+}
+
+/*Products Card*/
+.cards{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-top: 5rem;
+  align-items: center;
+}
+
+/*Slim Gallon*/
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 50rem;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: red;
+  border-radius: 7px;
+}
+.card1 img{
+  margin-top: 1rem;
+  max-width: 10rem;
+  max-height: 30rem;
+}
+
+.price {
+  color: #121212;
+  font-size: 22px;
+}
+
+#card-btn {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  margin-bottom: 1rem;
+  
+}
+.product-btn{
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  line-height: 1rem;
+}
+
+#card-btn:hover {
+  opacity: 0.7;
+}
+
+
+/*Round Gallon*/
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: #c3c7ca;
+  border-radius: 7px;
+}
+.card2 img{
+  margin-top: 1rem;
+  max-width: 7rem;
+  max-height: 20rem;
+  
+}
+/*Quantity*/
+#quantity{
+  width: 50%;
+  height: 2rem;
+  text-indent: 1rem;
+}
+@media (max-width: 858px){
+  .cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .cards>div{
+    margin-bottom: 1rem;
+  }
+}
+
+/*Products Card End*/
