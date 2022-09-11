@@ -331,5 +331,11 @@ section{
     margin-bottom: 1rem;
   }
 }
+@media (max-width: 858px){
+  .about{
+    margin-top: 30rem;
+  }
+
+}
 
 /*Products Card End*/
